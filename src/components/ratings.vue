@@ -81,7 +81,7 @@ export default {
   },
   mounted () {
     axios.get('./static/data.json').then(res => {
-      this.ratings = res.data.ratings
+      this.comments = res.data.ratings
       res.data.ratings.forEach(val => {
         this.classArr[0].count += 1
         this.classArr[0].comment.push(val)
